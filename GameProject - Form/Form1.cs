@@ -148,8 +148,13 @@ namespace GameProject___Form
                             textBox1.AppendText("Enemy attack successfull! \n");
                             if (!Player1.IsAlive())
                             {
-                                MessageBox.Show("You have been killed", "Fantasy Game");
-                                return;
+                                //Player Dead Game over
+                                DialogResult dialog = MessageBox.Show("You have been killed", "Fantasy Game",MessageBoxButtons.OK);
+                                if(dialog == DialogResult.OK)
+                                {
+                                    Application.Exit();
+                                }
+                              
                             }
                         }
                         else //Players defence was a success
