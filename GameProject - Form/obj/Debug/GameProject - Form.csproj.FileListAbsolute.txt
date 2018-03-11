@@ -21,3 +21,15 @@ C:\Users\nshea\Documents\Visual Studio 2017\Projects\GameProject - Form\GameProj
 C:\Users\nshea\Documents\Visual Studio 2017\Projects\GameProject - Form\GameProject - Form\obj\Debug\GameProject - Form.csproj.CoreCompileInputs.cache
 C:\Users\nshea\Documents\Visual Studio 2017\Projects\GameProject - Form\GameProject - Form\obj\Debug\GameProject - Form.exe
 C:\Users\nshea\Documents\Visual Studio 2017\Projects\GameProject - Form\GameProject - Form\obj\Debug\GameProject - Form.pdb
+C:\Users\nshea\source\repos\SimpleRPG-WinForm\GameProject - Form\bin\Debug\GameProject - Form.exe.config
+C:\Users\nshea\source\repos\SimpleRPG-WinForm\GameProject - Form\bin\Debug\GameProject - Form.exe
+C:\Users\nshea\source\repos\SimpleRPG-WinForm\GameProject - Form\bin\Debug\GameProject - Form.pdb
+C:\Users\nshea\source\repos\SimpleRPG-WinForm\GameProject - Form\bin\Debug\Engine.dll
+C:\Users\nshea\source\repos\SimpleRPG-WinForm\GameProject - Form\bin\Debug\Engine.pdb
+C:\Users\nshea\source\repos\SimpleRPG-WinForm\GameProject - Form\obj\Debug\GameProject - Form.csprojResolveAssemblyReference.cache
+C:\Users\nshea\source\repos\SimpleRPG-WinForm\GameProject - Form\obj\Debug\GameProject___Form.Form1.resources
+C:\Users\nshea\source\repos\SimpleRPG-WinForm\GameProject - Form\obj\Debug\GameProject___Form.Properties.Resources.resources
+C:\Users\nshea\source\repos\SimpleRPG-WinForm\GameProject - Form\obj\Debug\GameProject - Form.csproj.GenerateResource.Cache
+C:\Users\nshea\source\repos\SimpleRPG-WinForm\GameProject - Form\obj\Debug\GameProject - Form.csproj.CoreCompileInputs.cache
+C:\Users\nshea\source\repos\SimpleRPG-WinForm\GameProject - Form\obj\Debug\GameProject - Form.exe
+C:\Users\nshea\source\repos\SimpleRPG-WinForm\GameProject - Form\obj\Debug\GameProject - Form.pdb

@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/GameProject - Form/v15/Server/sqlite3
+/.vs/config
+/.vs/GameProject - Form/v15/sqlite3/storage.ide-wal
+/.vs/GameProject - Form/v15/sqlite3/storage.ide-shm
+/.vs/GameProject - Form/v15/sqlite3/db.lock
+/.vs/SimpleRPG-WinForm/v15/.suo

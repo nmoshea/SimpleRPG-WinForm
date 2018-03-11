@@ -194,6 +194,7 @@ namespace GameProject___Form
 
         void CurrentEnemyStats()
         {
+            EnemyType.Text = Enemy.EntityName();
             EnemyAttack.Text = Enemy._attack.ToString();
             EnemyDefenceLabel.Text = Enemy._defence.ToString();
             EnemyHealth.Text= Enemy._health.ToString();
