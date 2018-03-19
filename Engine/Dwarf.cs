@@ -14,6 +14,7 @@ namespace Engine
 
         }
 
+    
         public override string EntityName()
         {
             return "Dwarf";
@@ -23,7 +24,5 @@ namespace Engine
         {
             return "No Damage was done";
         }
-
-
     }
 }

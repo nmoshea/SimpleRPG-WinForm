@@ -17,7 +17,8 @@ namespace GameProject___Form
         Character Enemy;
         Item SquareItem;
         IEntity entity;
-
+        int SquareCount = 0;
+        const int CHANGETIME = 5;
 
         public Form1()
         {
@@ -26,8 +27,10 @@ namespace GameProject___Form
             Map.PopulateMap();
             groupBox2.Visible = false;
             PlayerStats();
-            
-        
+            CheckTime();
+
+
+
         }
 
         private void MoveEast_Click(object sender, EventArgs e)
@@ -69,19 +72,21 @@ namespace GameProject___Form
 
       public void ProcessSquare()
         {
+            
             textBox1.Clear();
             PlayerStats();
             groupBox2.Hide();
             Map.SetCurrentLocation(Player1._point); //Update Player location on map
-             entity = Map.World[Player1._point._x, Player1._point._y];   // get Entity from array.
+            CheckTime();
+            entity = Map.World[Player1._point._x, Player1._point._y];   // get Entity from array.
         
             if (Map.IsOccupied())
             {   
                 if (entity is Character)
                 {               
-                    Enemy = (Character)entity;   
-                    
+                    Enemy = (Character)entity;                      
                     textBox1.AppendText(Enemy.EntityName() + " found!\n");
+                    Enemy.PerformTimeMod();
                     CurrentEnemyStats();  // Display Enemy Stats 
                     groupBox2.Visible = true;
                 }
@@ -100,6 +105,8 @@ namespace GameProject___Form
                 Enemy = null;
                 SquareItem = null;
             }
+
+            SquareCount++;
     
         }
 
@@ -281,6 +288,20 @@ namespace GameProject___Form
             }           
         }
 
+        private void CheckTime()
+        {
+            if(SquareCount == 5)
+            {
+                if (Map.CurrentTime == DayOrNight.DAY)
+                    Map.CurrentTime = DayOrNight.NIGHT;
+                else
+                    Map.CurrentTime = DayOrNight.DAY;
 
+              
+               SquareCount = 0;  // reset count
+            }
+            label16.Text = Map.CurrentTime.ToString();
+
+        }
     }
 }

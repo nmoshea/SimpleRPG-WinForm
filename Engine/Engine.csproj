@@ -42,7 +42,9 @@
   <ItemGroup>
     <Compile Include="Armour.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="DayOrNight.cs" />
     <Compile Include="Hobbit.cs" />
+    <Compile Include="Orc.cs" />
     <Compile Include="WrongEntityException.cs" />
     <Compile Include="ItemCategory.cs" />
     <Compile Include="Dwarf.cs" />

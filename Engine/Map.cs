@@ -13,8 +13,9 @@ namespace Engine
       const int _COLUMN =10;
       static private Location _PlayerLocation;
       static Random rnd = new Random();
+      public static DayOrNight CurrentTime = DayOrNight.DAY;
 
-        public enum Direction {
+      public enum Direction {
             north,
             south,
             east,
@@ -49,7 +50,7 @@ namespace Engine
                 for (int i = 0; i < _ROW; i++)
                 {
 
-                    int r = rnd.Next(0, 150);
+                    int r = rnd.Next(0, 100);
                  
                     switch(r)
                     {
@@ -104,7 +105,13 @@ namespace Engine
                             World[j, i] = new Hobbit();
                             break;
 
+                        case 60:
+                        case 61:
+                        case 62:
+                            World[j, i] = new Orc();
+                            break;
 
+                           
                     }
 
 
@@ -115,7 +122,7 @@ namespace Engine
 
    
        
-   public static bool IsOccupied()
+    public static bool IsOccupied()
         {
             bool occupied = false;
             if (!(World[_PlayerLocation._x, _PlayerLocation._y] == null))
@@ -129,13 +136,13 @@ namespace Engine
             _PlayerLocation = location;
         }
     
-       public static string ReturnEntity()
+    public static string ReturnEntity()
         {
           return  World[_PlayerLocation._x, _PlayerLocation._y].ToString();
 
         }
 
-        public static void DeleteEntity()
+    public static void DeleteEntity()
         {
             World[_PlayerLocation._x, _PlayerLocation._y] = null;
 

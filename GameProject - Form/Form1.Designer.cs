@@ -69,6 +69,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -505,11 +507,32 @@
             this.label14.TabIndex = 14;
             this.label14.Text = "Armour:";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(22, 507);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(56, 20);
+            this.label15.TabIndex = 14;
+            this.label15.Text = "Time: ";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(74, 507);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(0, 20);
+            this.label16.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1104, 573);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.Inventory);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox2);
@@ -579,6 +602,8 @@
         private System.Windows.Forms.Label WeightLabel;
         private System.Windows.Forms.Label TotalWeightLabel;
         private System.Windows.Forms.Label TotalWeight;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
     }
 }
 

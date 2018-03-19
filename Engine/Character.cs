@@ -9,9 +9,9 @@ namespace Engine
     public abstract class Character: IEntity
     {
         public int _attack { get; set; } = 0;
-        double _attackChance  = 0;
+        public double _attackChance { get; set; } = 0;
         public int _defence { get; set; } = 0;
-        double _defenceChance  = 0;
+        public double _defenceChance { get; set; } = 0;
         public int _health { get; set;} = 0;
         public int _Strength { get; } = 0;
         public Inventory _charInventory { get; set; }
@@ -30,11 +30,14 @@ namespace Engine
 
         public abstract string EntityName();
         public abstract string SpecialRaceAbility();
-     
+        public virtual void PerformTimeMod()
+        {
 
+        }
+        
         public bool AttackSuccess()
         {
-            
+           
             bool Success = false;
 
             if (rnd.NextDouble() <= _attackChance)
@@ -74,5 +77,6 @@ namespace Engine
 
         }
 
+       
     }
 }
